@@ -1,0 +1,27 @@
+<!--<div>
+  <input type="text"  [(ngModel)]="first_name" /><br />
+  
+  <input type="text"  [(ngModel)]="name" /><br />
+  <input type="Email"  [(ngModel)]="email" /><br />
+  
+  <input type="password"  [(ngModel)]="pass" /><br />
+  <input type="button" value="CLICK" (click)="register()"  />
+</div>-->
+<form [formGroup]="personne">
+  <label>firstName:
+  <input type="text"  formControlName="firstname" ><br>
+  </label>
+  <label>lastName:
+  <input type="text" formControlName="name" ><br>
+  </label>
+  <label>Email:
+  <input type="email" formControlName="email" ><br>
+  </label>
+  <label>Password:
+    <input type="password" formControlName="pass"><br>
+  </label>
+  <input type="button" value="click" (click)=" register()" >
+  </form>
+
+
+ 

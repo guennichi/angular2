@@ -1,0 +1,47 @@
+<div class="img">
+  <img [src]="imgsrc">
+</div>
+<div class="tableau">
+  <table>
+  <table>
+    <tr>
+      <th>Month</th>
+  <th>Saving</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+    <tr> 
+      <!--class binding-->
+      <td [attr.colspan]="col">sum:$180</td>
+    </tr>
+  </table>
+  </table>
+  </div>
+<h1 [class.green]="isactive">hello</h1>
+<h1 (click)="login()">login</h1>
+<input type="text" [value]="val" (keydown.y)="login()">
+
+<input type="text" (keydown)="login($event)">
+
+
+<div class="clacul" ng-app="myApp" ng-controller="myCtrl">
+  <input type="number"  [(ngModel)]="num1" /><br />
+  <p>{{num1}}</p>
+  <input type="number"  [(ngModel)]="num2" /><br />
+  <p>{{num2}}</p>
+    <input type="button" value="somme" (click)="somm()"  />
+    <input type="button" value="multip" (click)="multip()"  />
+    <input type="button" value="div" (click)="div()"  />
+    <input type="button" value="sous" (click)="sous()"  />
+     <p>{{num3}}</p>
+    
+    </div>
+
+    
+
