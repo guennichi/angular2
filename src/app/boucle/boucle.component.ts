@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoucleComponent implements OnInit {
 
-open='true';
+open=true;
 arr=['js','html','angular','node','css'];
 arr1=[
   {name:'ahmed',age:'25'},

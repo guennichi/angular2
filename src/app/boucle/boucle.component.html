@@ -1,25 +1,29 @@
+
+<p>****boucle if***</p>
 <div *ngIf="open; else by">hello</div>
 <ng-template #by>
   <div>
     goodby
   </div>
 </ng-template>
-
+<p>******1*****</p>
  <div *ngFor="let i of arr">
   {{i}}
 </div>
-
-
+ <p>*****2*****</p>
 <div *ngFor="let i of arr1">
   {{i.name}}
+  {{i.age}}
 </div>
+<p>*****3******</p>
 <div *ngFor="let i of arr1; index as y">
-  {{y+1}}-{{i.name}}
+  {{y+1}}-{{i.name}} - {{i.age}}
 </div>
-<div *ngFor="let i of arr1;index as u; first as x"[style.color]="x? 'green':'red'"></div>
- 
-
-
+<p>*****4******</p>
+<div *ngFor="let i of arr1;index as y; first as x"[style.color]="x? 'green':'red'">
+  {{y+1}}-{{i.name}} - {{i.age}}
+</div>
+<p>*******5****</p>
 <input type="text"  [(ngModel)]="num" />
  <div [ngSwitch]="num">
   <div *ngSwitchCase="1">1</div>

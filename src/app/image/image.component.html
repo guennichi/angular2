@@ -1,7 +1,7 @@
 <div class="img">
   <img [src]="imgsrc">
 </div>
-<div class="tableau">
+<div class="tableau" >
   <table>
   <table>
     <tr>
@@ -17,14 +17,24 @@
       <td>$80</td>
     </tr>
     <tr> 
-      <!--class binding-->
+      
       <td [attr.colspan]="col">sum:$180</td>
     </tr>
   </table>
   </table>
   </div>
 <h1 [class.green]="isactive">hello</h1>
-<h1 (click)="login()">login</h1>
+<h1 [style.color]="isactive ? 'red':'blue'">hello</h1>
+<h1 [style.background-color]="isactive ? 'red':'blue'">hello</h1>
+<!-- <div>  
+  <h5>Two way binding Example</h5>  
+  Enter you Name:  <input [(ngModel)]="enterName"  />  
+  <br/><br/>  
+  <span> WelCome {{enterName}} ! </span>  
+</div>  -->
+
+
+
 <input type="text" [value]="val" (keydown.y)="login()">
 
 <input type="text" (keydown)="login($event)">

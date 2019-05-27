@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { logging } from 'protractor';
+
 
 @Component({
   selector: 'app-image',
@@ -12,6 +12,7 @@ imgsrc="../../assets/img/images (1).jpg";
 
 col=5;
 isactive=true;
+
 val='hanene';
 num1;
 num2;
